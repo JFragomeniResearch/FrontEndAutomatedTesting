@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.10.0 on win32)" generated="2024-12-11T00:54:51.981149" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Page Tests" source="F:\PythonProjects\FrontEndAutomatedTesting\tests\login_page_tests.robot">
+<test id="s1-t1" name="Verify Login Page Loads Successfully" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-11T00:54:52.207180" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
+<msg time="2024-12-11T00:54:58.410430" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-12-11T00:54:58.410430" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=131.0.6778.139)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F8DB6CC5+28821]
+	(No symbol) [0x00007FF6F8D23850]
+	(No symbol) [0x00007FF6F8BC578A]
+	(No symbol) [0x00007FF6F8BC2E88]
+	(No symbol) [0x00007FF6F8BB3BF9]
+	(No symbol) [0x00007FF6F8BB594F]
+	(No symbol) [0x00007FF6F8BB3EBF]
+	(No symbol) [0x00007FF6F8BB371B]
+	(No symbol) [0x00007FF6F8BB365A]
+	(No symbol) [0x00007FF6F8BB1274]
+	(No symbol) [0x00007FF6F8BB1B3C]
+	(No symbol) [0x00007FF6F8BC885A]
+	(No symbol) [0x00007FF6F8C601FE]
+	(No symbol) [0x00007FF6F8C3F2FA]
+	(No symbol) [0x00007FF6F8C5F412]
+	(No symbol) [0x00007FF6F8C3F0A3]
+	(No symbol) [0x00007FF6F8C0A778]
+	(No symbol) [0x00007FF6F8C0B8E1]
+	GetHandleVerifier [0x00007FF6F90EFCCD+3408029]
+	GetHandleVerifier [0x00007FF6F910743F+3504143]
+	GetHandleVerifier [0x00007FF6F90FB61D+3455469]
+	GetHandleVerifier [0x00007FF6F8E7BDCB+835995]
+	(No symbol) [0x00007FF6F8D2EB6F]
+	(No symbol) [0x00007FF6F8D2A824]
+	(No symbol) [0x00007FF6F8D2A9BD]
+	(No symbol) [0x00007FF6F8D1A1A9]
+	BaseThreadInitThunk [0x00007FF99F9C7374+20]
+	RtlUserThreadStart [0x00007FF9A159CC91+33]
+</msg>
+<arg>${FEATConfig.BASE_URL}</arg>
+<arg>${FEATConfig.BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-12-11T00:54:52.206153" elapsed="6.206244">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=131.0.6778.139)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F8DB6CC5+28821]
+	(No symbol) [0x00007FF6F8D23850]
+	(No symbol) [0x00007FF6F8BC578A]
+	(No symbol) [0x00007FF6F8BC2E88]
+	(No symbol) [0x00007FF6F8BB3BF9]
+	(No symbol) [0x00007FF6F8BB594F]
+	(No symbol) [0x00007FF6F8BB3EBF]
+	(No symbol) [0x00007FF6F8BB371B]
+	(No symbol) [0x00007FF6F8BB365A]
+	(No symbol) [0x00007FF6F8BB1274]
+	(No symbol) [0x00007FF6F8BB1B3C]
+	(No symbol) [0x00007FF6F8BC885A]
+	(No symbol) [0x00007FF6F8C601FE]
+	(No symbol) [0x00007FF6F8C3F2FA]
+	(No symbol) [0x00007FF6F8C5F412]
+	(No symbol) [0x00007FF6F8C3F0A3]
+	(No symbol) [0x00007FF6F8C0A778]
+	(No symbol) [0x00007FF6F8C0B8E1]
+	GetHandleVerifier [0x00007FF6F90EFCCD+3408029]
+	GetHandleVerifier [0x00007FF6F910743F+3504143]
+	GetHandleVerifier [0x00007FF6F90FB61D+3455469]
+	GetHandleVerifier [0x00007FF6F8E7BDCB+835995]
+	(No symbol) [0x00007FF6F8D2EB6F]
+	(No symbol) [0x00007FF6F8D2A824]
+	(No symbol) [0x00007FF6F8D2A9BD]
+	(No symbol) [0x00007FF6F8D1A1A9]
+	BaseThreadInitThunk [0x00007FF99F9C7374+20]
+	RtlUserThreadStart [0x00007FF9A159CC91+33]
+</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2024-12-11T00:54:58.412397" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<arg>${LOGIN_USERNAME_FIELD}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" start="2024-12-11T00:54:58.412397" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<arg>${LOGIN_PASSWORD_FIELD}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" start="2024-12-11T00:54:58.413395" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" start="2024-12-11T00:54:58.413395" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-12-11T00:54:58.413395" elapsed="2.135261"/>
+</kw>
+<status status="FAIL" start="2024-12-11T00:54:52.205192" elapsed="8.343464">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=131.0.6778.139)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F8DB6CC5+28821]
+	(No symbol) [0x00007FF6F8D23850]
+	(No symbol) [0x00007FF6F8BC578A]
+	(No symbol) [0x00007FF6F8BC2E88]
+	(No symbol) [0x00007FF6F8BB3BF9]
+	(No symbol) [0x00007FF6F8BB594F]
+	(No symbol) [0x00007FF6F8BB3EBF]
+	(No symbol) [0x00007FF6F8BB371B]
+	(No symbol) [0x00007FF6F8BB365A]
+	(No symbol) [0x00007FF6F8BB1274]
+	(No symbol) [0x00007FF6F8BB1B3C]
+	(No symbol) [0x00007FF6F8BC885A]
+	(No symbol) [0x00007FF6F8C601FE]
+	(No symbol) [0x00007FF6F8C3F2FA]
+	(No symbol) [0x00007FF6F8C5F412]
+	(No symbol) [0x00007FF6F8C3F0A3]
+	(No symbol) [0x00007FF6F8C0A778]
+	(No symbol) [0x00007FF6F8C0B8E1]
+	GetHandleVerifier [0x00007FF6F90EFCCD+3408029]
+	GetHandleVerifier [0x00007FF6F910743F+3504143]
+	GetHandleVerifier [0x00007FF6F90FB61D+3455469]
+	GetHandleVerifier [0x00007FF6F8E7BDCB+835995]
+	(No symbol) [0x00007FF6F8D2EB6F]
+	(No symbol) [0x00007FF6F8D2A824]
+	(No symbol) [0x00007FF6F8D2A9BD]
+	(No symbol) [0x00007FF6F8D1A1A9]
+	BaseThreadInitThunk [0x00007FF99F9C7374+20]
+	RtlUserThreadStart [0x00007FF9A159CC91+33]
+</status>
+</test>
+<test id="s1-t2" name="Verify Successful Login" line="20">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-11T00:55:00.551619" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
+<msg time="2024-12-11T00:55:06.830652" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-12-11T00:55:06.830652" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=131.0.6778.139)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F8DB6CC5+28821]
+	(No symbol) [0x00007FF6F8D23850]
+	(No symbol) [0x00007FF6F8BC578A]
+	(No symbol) [0x00007FF6F8BC2E88]
+	(No symbol) [0x00007FF6F8BB3BF9]
+	(No symbol) [0x00007FF6F8BB594F]
+	(No symbol) [0x00007FF6F8BB3EBF]
+	(No symbol) [0x00007FF6F8BB371B]
+	(No symbol) [0x00007FF6F8BB365A]
+	(No symbol) [0x00007FF6F8BB1274]
+	(No symbol) [0x00007FF6F8BB1B3C]
+	(No symbol) [0x00007FF6F8BC885A]
+	(No symbol) [0x00007FF6F8C601FE]
+	(No symbol) [0x00007FF6F8C3F2FA]
+	(No symbol) [0x00007FF6F8C5F412]
+	(No symbol) [0x00007FF6F8C3F0A3]
+	(No symbol) [0x00007FF6F8C0A778]
+	(No symbol) [0x00007FF6F8C0B8E1]
+	GetHandleVerifier [0x00007FF6F90EFCCD+3408029]
+	GetHandleVerifier [0x00007FF6F910743F+3504143]
+	GetHandleVerifier [0x00007FF6F90FB61D+3455469]
+	GetHandleVerifier [0x00007FF6F8E7BDCB+835995]
+	(No symbol) [0x00007FF6F8D2EB6F]
+	(No symbol) [0x00007FF6F8D2A824]
+	(No symbol) [0x00007FF6F8D2A9BD]
+	(No symbol) [0x00007FF6F8D1A1A9]
+	BaseThreadInitThunk [0x00007FF99F9C7374+20]
+	RtlUserThreadStart [0x00007FF9A159CC91+33]
+</msg>
+<arg>${FEATConfig.BASE_URL}</arg>
+<arg>${FEATConfig.BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-12-11T00:55:00.550625" elapsed="6.281025">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=131.0.6778.139)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F8DB6CC5+28821]
+	(No symbol) [0x00007FF6F8D23850]
+	(No symbol) [0x00007FF6F8BC578A]
+	(No symbol) [0x00007FF6F8BC2E88]
+	(No symbol) [0x00007FF6F8BB3BF9]
+	(No symbol) [0x00007FF6F8BB594F]
+	(No symbol) [0x00007FF6F8BB3EBF]
+	(No symbol) [0x00007FF6F8BB371B]
+	(No symbol) [0x00007FF6F8BB365A]
+	(No symbol) [0x00007FF6F8BB1274]
+	(No symbol) [0x00007FF6F8BB1B3C]
+	(No symbol) [0x00007FF6F8BC885A]
+	(No symbol) [0x00007FF6F8C601FE]
+	(No symbol) [0x00007FF6F8C3F2FA]
+	(No symbol) [0x00007FF6F8C5F412]
+	(No symbol) [0x00007FF6F8C3F0A3]
+	(No symbol) [0x00007FF6F8C0A778]
+	(No symbol) [0x00007FF6F8C0B8E1]
+	GetHandleVerifier [0x00007FF6F90EFCCD+3408029]
+	GetHandleVerifier [0x00007FF6F910743F+3504143]
+	GetHandleVerifier [0x00007FF6F90FB61D+3455469]
+	GetHandleVerifier [0x00007FF6F8E7BDCB+835995]
+	(No symbol) [0x00007FF6F8D2EB6F]
+	(No symbol) [0x00007FF6F8D2A824]
+	(No symbol) [0x00007FF6F8D2A9BD]
+	(No symbol) [0x00007FF6F8D1A1A9]
+	BaseThreadInitThunk [0x00007FF99F9C7374+20]
+	RtlUserThreadStart [0x00007FF9A159CC91+33]
+</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2024-12-11T00:55:06.831650" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${LOGIN_USERNAME_FIELD}</arg>
+<arg>${VALID_USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-11T00:55:06.832646" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${LOGIN_PASSWORD_FIELD}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-11T00:55:06.832646" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-11T00:55:06.832646" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${DASHBOARD_LINK}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-12-11T00:55:06.832646" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-12-11T00:55:06.833669" elapsed="2.101827"/>
+</kw>
+<status status="FAIL" start="2024-12-11T00:55:00.550625" elapsed="8.384871">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=131.0.6778.139)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F8DB6CC5+28821]
+	(No symbol) [0x00007FF6F8D23850]
+	(No symbol) [0x00007FF6F8BC578A]
+	(No symbol) [0x00007FF6F8BC2E88]
+	(No symbol) [0x00007FF6F8BB3BF9]
+	(No symbol) [0x00007FF6F8BB594F]
+	(No symbol) [0x00007FF6F8BB3EBF]
+	(No symbol) [0x00007FF6F8BB371B]
+	(No symbol) [0x00007FF6F8BB365A]
+	(No symbol) [0x00007FF6F8BB1274]
+	(No symbol) [0x00007FF6F8BB1B3C]
+	(No symbol) [0x00007FF6F8BC885A]
+	(No symbol) [0x00007FF6F8C601FE]
+	(No symbol) [0x00007FF6F8C3F2FA]
+	(No symbol) [0x00007FF6F8C5F412]
+	(No symbol) [0x00007FF6F8C3F0A3]
+	(No symbol) [0x00007FF6F8C0A778]
+	(No symbol) [0x00007FF6F8C0B8E1]
+	GetHandleVerifier [0x00007FF6F90EFCCD+3408029]
+	GetHandleVerifier [0x00007FF6F910743F+3504143]
+	GetHandleVerifier [0x00007FF6F90FB61D+3455469]
+	GetHandleVerifier [0x00007FF6F8E7BDCB+835995]
+	(No symbol) [0x00007FF6F8D2EB6F]
+	(No symbol) [0x00007FF6F8D2A824]
+	(No symbol) [0x00007FF6F8D2A9BD]
+	(No symbol) [0x00007FF6F8D1A1A9]
+	BaseThreadInitThunk [0x00007FF99F9C7374+20]
+	RtlUserThreadStart [0x00007FF9A159CC91+33]
+</status>
+</test>
+<doc>Login page test suite</doc>
+<status status="FAIL" start="2024-12-11T00:54:51.983171" elapsed="16.954203"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Login Page Tests">Login Page Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
