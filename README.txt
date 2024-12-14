@@ -6,3 +6,5 @@ Author: Joseph Fragomeni
 Front-end automated testing tool for web applications. Created using Python and Robot Framework.
 
 Additional pertinent project information will be listed here.
+
+Project created using Cursor.ai IDE for applied/educational purposes.
